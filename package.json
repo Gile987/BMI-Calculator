@@ -1,0 +1,27 @@
+{
+  "name": "bmi-calculator",
+  "version": "1.0.0",
+  "description": "Simple BMI calculator",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gile987/BMI-Calculator.git"
+  },
+  "keywords": [
+    "bmi",
+    "index",
+    "calculator"
+  ],
+  "author": "Mladen Reljic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gile987/BMI-Calculator/issues"
+  },
+  "homepage": "https://github.com/Gile987/BMI-Calculator#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
