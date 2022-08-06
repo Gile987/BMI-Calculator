@@ -14,7 +14,7 @@ const calculate = () => {
   } else if (weight === "" || isNaN(weight)) {
     result.innerHTML = "Please enter a valid weight";
   } else {
-    let bmi = weight / (height * height);
+    let bmi = (weight / ((height * height) / 10000)).toFixed(2);
     result.innerHTML = "Your BMI is " + bmi;
   };
 };
