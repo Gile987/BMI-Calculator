@@ -9,7 +9,6 @@ const calculate = () => {
   let result = document.querySelector('.results_text');
 
   if (height === "" || isNaN(height)) {
-    console.log("height is empty");
     result.innerHTML = "Please enter a valid number";
   } else if (weight === "" || isNaN(weight)) {
     result.innerHTML = "Please enter a valid number";

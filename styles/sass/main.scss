@@ -5,21 +5,49 @@
 
 body {
   font-family: "Rubik";
+  background-color: #90afc5;
 }
 
 .container {
   margin: 2rem auto;
   max-width: 60rem;
   padding: 1.25rem;
-  border: 1px solid #ccc;
+  border: 1px solid #2a3132;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #336b87;
+  color: #edf1fe;
 
   .title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .calculator {
+    background-color:#90afc5;
+    padding: 3rem;
+    border: 1px solid #2a3132;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    span {
+      background-color: #71afce;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    input {
+      margin: 0.5rem 0;
+      max-width: 3.2rem;
+      text-align: center;
+    }
   }
 }
