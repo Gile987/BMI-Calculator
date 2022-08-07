@@ -56,6 +56,23 @@ body {
 .container .morbidly_obese {
   color: #f91111;
 }
+.container .not_human {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow-animation 35s linear infinite;
+          animation: rainbow-animation 35s linear infinite;
+}
+@-webkit-keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
 .container .calculator {
   background-color: #90afc5;
   padding: 3rem;

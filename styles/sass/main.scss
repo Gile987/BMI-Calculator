@@ -28,7 +28,7 @@ body {
   }
 
   .results {
-    background-color:#181616;
+    background-color: #181616;
     padding: 0.6rem;
     border: 1px solid #2a3132;
     display: none;
@@ -39,35 +39,49 @@ body {
   }
 
   .severe {
-    color:#b6d2e5;
+    color: #b6d2e5;
   }
 
   .underweight {
-    color:#7bbae4;
+    color: #7bbae4;
   }
 
   .normal {
-    color:#53eb74;
+    color: #53eb74;
   }
 
   .overweight {
-    color:#f9c851;
+    color: #f9c851;
   }
 
   .obese {
-    color:#f98651;
+    color: #f98651;
   }
-  
+
   .severely_obese {
-    color:#f95151;
+    color: #f95151;
   }
 
   .morbidly_obese {
-    color:#f91111;
+    color: #f91111;
   }
-  
+
+  .not_human {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 35s linear infinite;
+
+    @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }
+    }
+  }
+
+
   .calculator {
-    background-color:#90afc5;
+    background-color: #90afc5;
     padding: 3rem;
     border: 1px solid #2a3132;
     display: flex;

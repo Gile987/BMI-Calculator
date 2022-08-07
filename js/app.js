@@ -51,6 +51,7 @@ const calculate = () => {
         result.innerHTML += " and you are morbidly obese";
         break;
       default:
+        result.classList.add('not_human');
         result.innerHTML += " and you are not a human";
     };
   };
