@@ -8,6 +8,7 @@ const calculate = () => {
   let weight = parseInt(document.querySelector('.weight').value);
   let resultContainer = document.querySelector('.results');
   let result = document.querySelector('.results_text');
+  result.classList.value = 'results_text';
 
   if (height === "" || isNaN(height)) {
     resultContainer.classList.add('show');
