@@ -28,7 +28,7 @@ body {
   }
 
   .results {
-    background-color:#90afc5;
+    background-color:#181616;
     padding: 0.6rem;
     border: 1px solid #2a3132;
     display: none;
@@ -38,6 +38,34 @@ body {
     display: block;
   }
 
+  .severe {
+    color:#b6d2e5;
+  }
+
+  .underweight {
+    color:#7bbae4;
+  }
+
+  .normal {
+    color:#53eb74;
+  }
+
+  .overweight {
+    color:#f9c851;
+  }
+
+  .obese {
+    color:#f98651;
+  }
+  
+  .severely_obese {
+    color:#f95151;
+  }
+
+  .morbidly_obese {
+    color:#f91111;
+  }
+  
   .calculator {
     background-color:#90afc5;
     padding: 3rem;

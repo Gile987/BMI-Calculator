@@ -27,13 +27,34 @@ body {
   text-transform: uppercase;
 }
 .container .results {
-  background-color: #90afc5;
+  background-color: #181616;
   padding: 0.6rem;
   border: 1px solid #2a3132;
   display: none;
 }
 .container .show {
   display: block;
+}
+.container .severe {
+  color: #b6d2e5;
+}
+.container .underweight {
+  color: #7bbae4;
+}
+.container .normal {
+  color: #53eb74;
+}
+.container .overweight {
+  color: #f9c851;
+}
+.container .obese {
+  color: #f98651;
+}
+.container .severely_obese {
+  color: #f95151;
+}
+.container .morbidly_obese {
+  color: #f91111;
 }
 .container .calculator {
   background-color: #90afc5;

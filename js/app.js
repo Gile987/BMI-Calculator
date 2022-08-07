@@ -22,24 +22,31 @@ const calculate = () => {
 
     switch (true) {
       case bmi >= 6 && bmi < 16.0:
+        result.classList.add('severe');
         result.innerHTML += " and you are severely underweight";
         break;
       case bmi >= 16.0 && bmi < 18.5:
+        result.classList.add('underweight');
         result.innerHTML += " and you are underweight";
         break;
       case bmi >= 18.5 && bmi <= 24.9:
+        result.classList.add('normal');
         result.innerHTML += " and your BMI is normal";
         break;
       case bmi >= 25 && bmi <= 29.9:
+        result.classList.add('overweight');
         result.innerHTML += " and you are overweight";
         break;
       case bmi >= 30 && bmi <= 34.9:
+        result.classList.add('obese');
         result.innerHTML += " and you are obese";
         break;
       case bmi >= 35 && bmi <= 39.9:
+        result.classList.add('severely_obese');
         result.innerHTML += " and you are severely obese";
         break;
       case bmi >= 40 && bmi <= 252:
+        result.classList.add('morbidly_obese');
         result.innerHTML += " and you are morbidly obese";
         break;
       default:
