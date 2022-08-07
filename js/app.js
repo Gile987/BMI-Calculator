@@ -6,15 +6,20 @@ window.onload = () => {
 const calculate = () => {
   let height = parseInt(document.querySelector('.height').value);
   let weight = parseInt(document.querySelector('.weight').value);
+  let resultContainer = document.querySelector('.results');
   let result = document.querySelector('.results_text');
 
   if (height === "" || isNaN(height)) {
+    resultContainer.classList.add('show');
     result.innerHTML = "Please enter a valid number";
   } else if (weight === "" || isNaN(weight)) {
+    resultContainer.classList.add('show');
     result.innerHTML = "Please enter a valid number";
   } else {
     let bmi = (weight / ((height * height) / 10000)).toFixed(2);
     result.innerHTML = "Your BMI is " + bmi;
+    resultContainer.classList.add('show');
+
     switch (true) {
       case bmi >= 6 && bmi < 16.0:
         result.innerHTML += " and you are severely underweight";
