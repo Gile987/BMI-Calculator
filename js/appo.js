@@ -3,13 +3,13 @@ class App {
     this.calculateButton = document.querySelector('.calculate');
     this.resultContainer = document.querySelector('.results');
     this.result = document.querySelector('.results_text');
-    this.result.classList.value = 'results_text';
     this.calculateButton.addEventListener('click', this.calculate.bind(this));
   }
 
   calculate() {
     let height = parseInt(document.querySelector('.height').value);
     let weight = parseInt(document.querySelector('.weight').value);
+    this.result.classList.value = 'results_text';
     if (height === "" || isNaN(height)) {
       this.resultContainer.classList.add('show');
       this.result.innerHTML = "Please enter a valid number";
