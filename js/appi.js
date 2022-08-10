@@ -45,7 +45,6 @@ class BmiRange {
     this.cssClass = cssClass;
   };
   checkRange(value) {
-    console.log(value)
     if (value >= this.from && value <= this.to) {
       return {message: this.message, cssClass: this.cssClass};
     };
