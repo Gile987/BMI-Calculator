@@ -68,10 +68,10 @@ document.querySelector('.calculate').addEventListener('click', function() {
   userHeight = document.querySelector('.height').value;
   userWeight = document.querySelector('.weight').value;
   result = document.querySelector('.results_text');
-  let measurements = new Measurements();
-  let bmi = new BMI(measurements);
-  let displayResults = new DisplayResults(bmi);
-  let bmiRange = bmiRanges.find(bmiNum => bmiNum.checkRange(bmi.calculateBMI()));
+  const measurements = new Measurements();
+  const bmi = new BMI(measurements);
+  const displayResults = new DisplayResults(bmi);
+  const bmiRange = bmiRanges.find(bmiNum => bmiNum.checkRange(bmi.calculateBMI()));
   displayResults.displayResults();
   result.classList.add(bmiRange.cssClass);
   result.innerHTML += bmiRange.message;
