@@ -68,6 +68,7 @@ document.querySelector('.calculate').addEventListener('click', function() {
   userHeight = document.querySelector('.height').value;
   userWeight = document.querySelector('.weight').value;
   result = document.querySelector('.results_text');
+  result.classList.value = 'results_text';
   const measurements = new Measurements();
   const bmi = new BMI(measurements);
   const displayResults = new DisplayResults(bmi);
